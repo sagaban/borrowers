@@ -11,13 +11,15 @@ Router.map(function() {
 
     this.route('show', {
       path: ':friend_id'
+    }, function () {
+      this.route('articles', {resetNamespace: true}, function () {
+      });
     });
 
     this.route('edit', {
       path: ':friend_id/edit'
     });
   });
-  this.route('articles');
 });
 
 export default Router;
