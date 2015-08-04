@@ -18,6 +18,8 @@ import Ember from 'ember';
 
 export default DS.Model.extend({
 
+  articles: DS.hasMany('article'),
+
   // DS.attr is the standard way to define attributes with ember data
   firstName: DS.attr('string'),
 
