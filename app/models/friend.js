@@ -14,6 +14,7 @@ import DS from 'ember-data';
 // We can also use relative imports. So if we were in another model, we
 // could have written
 // import Friend from './friend';
+import Ember from 'ember';
 
 export default DS.Model.extend({
 
