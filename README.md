@@ -3,6 +3,10 @@
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
+## The book
+
+This code is the result of reading the [ember-cli 101](https://leanpub.com/ember-cli-101) book
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
@@ -15,14 +19,14 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/sagaban/borrowers.git` this repository
 * change into the new directory
 * `npm install`
 * `bower install`
 
 ## Running / Development
 
-* `ember server`
+* `ember server --proxy http://api.ember-cli-101.com`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
 ### Code Generators

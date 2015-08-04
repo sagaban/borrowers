@@ -13,9 +13,10 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    delete(friend) {
-      friend.destroyRecord();
-      return false;
-    }
+    // REFACTORED: Moved to friends route
+    //delete(friend) {
+    //  friend.destroyRecord();
+    //  return false;
+    //}
   }
 });
