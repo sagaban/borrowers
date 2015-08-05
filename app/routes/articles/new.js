@@ -11,6 +11,8 @@ export default Ember.Route.extend({
   actions: {
     save() {
       var model = this.modelFor('articles/new');
+      console.log("It go trough news article routes");
+
       model.save().then(() => {
         this.transitionTo('articles');
       });
