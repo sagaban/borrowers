@@ -19,7 +19,7 @@ export default Ember.Route.extend({
 
   actions: {
     save(model) {
-      console.log("It go trough index article controller, and NOT bubble up");
+      console.log("It go trough index article routes, and NOT bubble up");
       model.save();
       return false;
     }

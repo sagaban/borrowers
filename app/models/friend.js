@@ -36,6 +36,12 @@ export default DS.Model.extend({
   fullName: Ember.computed('firstName', 'lastName', {
     get() {
       return this.get('firstName') + ' ' + this.get('lastName');
+    },
+    set(key, value) {
+      var name = value.split(' ');
+      this.set('firstName', name[0]);
+      this.set('lastName', name[1]);
+      return value;
     }
   }),
 
