@@ -25,3 +25,6 @@ table {
 .friends-table thead tr {
   cursor: pointer;
 }
+.cursor-pointer{
+  cursor: pointer;
+}

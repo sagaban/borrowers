@@ -4,12 +4,12 @@
     <th>Description</th>
     <th>Notes</th>
     <th>Borrowed since</th>
-    <th></th>
+    <th class="cursor-pointer" {{action "showFilter"}}>Show/Hide returned</th>
     <th></th>
   </tr>
   </thead>
   <tbody>
-  {{#each model as |article|}}
+  {{#each filteredResults as |article|}}
     {{articles/article-row
     article=article
     save="save"

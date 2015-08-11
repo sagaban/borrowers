@@ -1,7 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model() {
+
+  model(params) {
     let articles = this.modelFor('friends/show').get('articles');
 
     //
